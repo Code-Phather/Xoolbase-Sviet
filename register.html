@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XoolBase | Register</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="browser-frame">
+            <header>
+                <div class="logo">XoolBase</div>
+                <nav>
+                    <a href="#">About XoolBase</a>
+                    <a href="#">Library Map</a>
+                    <a href="#">Student Portal</a>
+                    <button class="signup-btn" onclick="location.href='landing.html'">Log In</button>
+                </nav>
+            </header>
+
+            <main class="hero">
+                <div class="login-side">
+                    <h1>Create Your <br> Library Account</h1>
+                    <p>Join XoolBase to manage your borrowed books, access digital research papers, and reserve study rooms.</p>
+                    
+                    <form id="registerForm" class="login-card">
+                        <div class="input-group">
+                            <i class="ph ph-identification-card"></i>
+                            <input type="text" id="fullName" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="ph ph-envelope"></i>
+                            <input type="email" id="email" placeholder="College Email" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="ph ph-user"></i>
+                            <input type="text" id="username" placeholder="Student/Faculty ID" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="ph ph-key"></i>
+                            <input type="password" id="password" placeholder="Create Password" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="ph ph-shield-check"></i>
+                            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                        </div>
+                        
+                        <button type="submit" class="login-submit">Create Account</button>
+                        <button type="button" class="sso-btn">Register with College SSO</button>
+                    </form>
+                </div>
+
+                <div class="image-side">
+                    <div class="illustration-placeholder">
+                        <img src="/home/live/Documents/people-library-flat-vector-illustration/people-library-flat-vector-illustration.png" alt="Library Illustration">
+                    </div>
+                </div>
+            </main>
+
+            <footer class="stats-bar">
+                <div class="stat-item">
+                    <h3>5M+</h3>
+                    <p>Volumes & Collections</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20k+</h3>
+                    <p>Available Studies</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2k+</h3>
+                    <p>E-Journal Subscriptions</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Reserve A Room</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

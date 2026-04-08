@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XoolBase | College Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>XoolBase 🎓</h2>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#" class="active"><i class="ph ph-books"></i> Library</a>
+            <a href="#"><i class="ph ph-plus-circle"></i> Add Items</a>
+            <a href="#"><i class="ph ph-folders"></i> Collections</a>
+            <a href="#"><i class="ph ph-user-list"></i> Managers</a>
+            <a href="#"><i class="ph ph-chart-bar"></i> Reports</a>
+            <a href="#"><i class="ph ph-gear"></i> Settings</a>
+        </nav>
+<!--log out to be edited-->
+        <button class="logout-btn" id="logoutBtn"><i class="ph ph-sign-out"></i> Log Out</button>
+    </aside>
+
+    <main class="content">
+        <header class="top-bar">
+            <div class="search-container">
+                <i class="ph ph-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search books, authors, or ISBN...">
+            </div>
+           
+          <div class="user-profile">
+            <span id="welcomeUser">User</span> <div class="avatar"></div>
+        </div>
+        </div>
+        </header>
+
+        <section class="library-section">
+            <div class="section-header">
+                <h1>My Books <span class="count">112</span></h1>
+                <div class="filters">
+                    <button><i class="ph ph-squares-four"></i> Cover</button>
+                    <button><i class="ph ph-sort-ascending"></i> Title</button>
+                    <button class="filter-btn"><i class="ph ph-funnel"></i> Filters</button>
+                </div>
+            </div>
+
+            <div class="book-grid" id="bookGrid">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
